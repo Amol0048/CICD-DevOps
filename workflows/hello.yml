@@ -9,3 +9,9 @@ jobs:
     steps:
       - name: Say hello to users
         run: echo "Hello user"
+  deatils:
+    runs-on: ubuntu-latest
+    steps:
+      -name: show what is the versions of python and docker
+      run: docker --version && python --version
+        
