@@ -3,73 +3,135 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
+<title>Amol | DevOps Engineer</title>
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f4f4f4;
+background:#0f172a;
+color:white;
+line-height:1.6;
 }
 
 header{
-    background:#333;
-    color:white;
-    padding:20px;
-    text-align:center;
-}
-
-nav{
-    background:#444;
-    padding:10px;
-    text-align:center;
+background:#020617;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
 }
 
 nav a{
-    color:white;
-    margin:10px;
-    text-decoration:none;
-    font-weight:bold;
+color:white;
+margin-left:25px;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+color:#94a3b8;
 }
 
 section{
-    padding:40px;
-    margin:20px;
-    background:white;
-    border-radius:8px;
+padding:80px 10%;
 }
 
-.skills span{
-    display:inline-block;
-    background:#007BFF;
-    color:white;
-    padding:8px 12px;
-    margin:5px;
-    border-radius:5px;
+h2{
+font-size:32px;
+margin-bottom:30px;
+text-align:center;
 }
 
-.project{
-    border:1px solid #ddd;
-    padding:15px;
-    margin-top:10px;
+.skills{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.skill{
+background:#1e293b;
+padding:12px 20px;
+border-radius:8px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.project-card{
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+}
+
+.project-card h3{
+margin-bottom:10px;
+}
+
+.contact{
+text-align:center;
 }
 
 footer{
-    text-align:center;
-    background:#333;
-    color:white;
-    padding:15px;
+text-align:center;
+padding:20px;
+background:#020617;
+color:#94a3b8;
 }
-</style>
 
+button{
+background:#38bdf8;
+border:none;
+padding:10px 18px;
+border-radius:6px;
+margin-top:15px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0284c7;
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-<h1>Amol's Portfolio</h1>
-<p>DevOps Engineer | Cloud | Automation</p>
-</header>
+
+<h3>Amol</h3>
 
 <nav>
 <a href="#about">About</a>
@@ -78,55 +140,103 @@ footer{
 <a href="#contact">Contact</a>
 </nav>
 
+</header>
+
+
+<div class="hero">
+
+<h1>Amol's Portfolio</h1>
+
+<p>DevOps Engineer | Cloud | Automation</p>
+
+</div>
+
+
 <section id="about">
+
 <h2>About Me</h2>
-<p>Hello! I'm Amol, a DevOps enthusiast learning CI/CD, Docker, Kubernetes, and Cloud technologies.</p>
+
+<p style="text-align:center; max-width:700px; margin:auto;">
+
+Hello! I'm Amol, a Computer Engineer with **5 years of experience in Azure Cloud Storage Administration** and **2 years of experience in DevOps**.  
+I enjoy building automation, CI/CD pipelines, and scalable cloud infrastructure using modern DevOps tools.
+
+</p>
+
 </section>
 
+
 <section id="skills">
+
 <h2>Skills</h2>
 
 <div class="skills">
-<span>Linux</span>
-<span>Git</span>
-<span>Docker</span>
-<span>Kubernetes</span>
-<span>AWS</span>
-<span>GitHub Actions</span>
-<span>Terraform</span>
+
+<div class="skill">Linux</div>
+<div class="skill">Git</div>
+<div class="skill">Docker</div>
+<div class="skill">Kubernetes</div>
+<div class="skill">Azure</div>
+<div class="skill">GitHub Actions</div>
+<div class="skill">Terraform</div>
+<div class="skill">CI/CD</div>
+
 </div>
 
 </section>
+
 
 <section id="projects">
+
 <h2>Projects</h2>
 
-<div class="project">
+<div class="projects">
+
+<div class="project-card">
 <h3>CI/CD Pipeline</h3>
-<p>Automated build and deployment using GitHub Actions.</p>
+<p>Automated build and deployment pipeline using GitHub Actions.</p>
 </div>
 
-<div class="project">
+<div class="project-card">
 <h3>Dockerized Application</h3>
-<p>Containerized web application using Docker.</p>
+<p>Containerized a web application using Docker for consistent deployments.</p>
 </div>
 
-<div class="project">
+<div class="project-card">
 <h3>Kubernetes Deployment</h3>
-<p>Deployed scalable application on Kubernetes cluster.</p>
+<p>Deployed scalable application on Kubernetes cluster with auto scaling.</p>
+</div>
+
 </div>
 
 </section>
+
 
 <section id="contact">
+
 <h2>Contact</h2>
+
+<div class="contact">
+
 <p>Email: amol@example.com</p>
+
 <p>GitHub: https://github.com/Amol0048</p>
+
+<button onclick="window.location.href='mailto:amol@example.com'">
+Send Email
+</button>
+
+</div>
+
 </section>
 
+
 <footer>
+
 <p>© 2026 Amol | DevOps Portfolio</p>
+
 </footer>
+
 
 </body>
 </html>
